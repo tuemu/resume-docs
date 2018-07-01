@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1> 職　務　経　歴　書 </h1>
+<hr>
+<ul>
+<li>2018年 4月 1日現在</li>
+<li>氏名　植村　公洋</li>
+</ul>
+<h2 id="%E3%80%90%E8%81%B7%E5%8B%99%E8%A6%81%E7%B4%84%E3%80%91">【職務要約】</h2>
+<h3 id="%E6%96%B0%E5%8D%92%E3%81%8B%E3%82%899%E5%B9%B4%E9%96%93">新卒から9年間</h3>
+<pre><code>航空会社のITエンジニアとしてシステムの企画、設計、製造、検証から運用まで全開発工程を経験。
+役割としては、プログラマーから始まり、システムエンジニアを経てプロジェクトマネージャ、クラウドアーキテクトとして職務を遂行。
+経験したプロジェクトマネジメント規模は最大約100人月、プロジェクトメンバーは5〜10人程度。
+</code></pre>
+<h3 id="%E7%A4%BE%E4%BC%9A%E4%BA%BA10%E5%B9%B4%E7%9B%AE%E3%81%8B%E3%82%893%E5%B9%B4%E9%96%93">社会人10年目から3年間</h3>
+<pre><code>自社開発を行うソフトウェア会社にて、ECプラットフォームの製品開発部門でソフトウェアエンジニアとして従事。
+内、後半の1年半は、シンガポール事業所にて、アジャイル開発のプロジェクトマネージャーとして
+グローバルメンバー(最大6人)のマネジメントを行いながら、新製品のアーキテクチャ設計を担当。
+</code></pre>
+<h3 id="%E7%B5%8C%E9%A8%93%E3%82%B9%E3%82%AD%E3%83%AB%E6%8A%9C%E7%B2%8B">経験&amp;スキル抜粋</h3>
+<ul>
+<li>AWSソリューションアーキテクト</li>
+<li>プロジェクトマネジメント実績最大100人月</li>
+<li>アジャイル開発でのプロジェクトマネジメント(チームメンバー最大6人)</li>
+<li>交通インフラ系ミッションクリティカルシステム運用 4年</li>
+<li>システム企画から運用までの開発工程担当経験</li>
+<li>多くのプロジェクト参画実績に裏付けされた適応力及び吸収力</li>
+<li>マネジメントやユーザ折衝で培ったコミュニケーションスキル</li>
+<li>ORACLEマスターゴールド</li>
+<li>語学力：日常英会話から簡単なビジネス英会話程度(Singapore 日系企業1.5年勤務)</li>
+</ul>
+<h2 id="%E3%80%90%E8%81%B7%E5%8B%99%E7%95%A5%E6%AD%B4%E3%80%91">【職務略歴】</h2>
+<ul>
+<li>2015年4月〜現在		株式会社ワークスアプリケーションズ</li>
+<li>2006年4月〜2015年3月	ANAシステムズ株式会社</li>
+</ul>
+<h2 id="%E3%80%90%E8%81%B7%E5%8B%99%E7%B5%8C%E6%AD%B4%E3%80%91">【職務経歴】</h2>
+<h3 id="2015%E5%B9%B44%E6%9C%88%E3%80%9C%E7%8F%BE%E5%9C%A8-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BA">2015年4月〜現在	株式会社ワークスアプリケーションズ*</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">期間</th>
+<th style="text-align:left">プロジェクト</th>
+<th style="text-align:left">役割</th>
+<th style="text-align:left">利用技術</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2017年02月 〜現在</td>
+<td style="text-align:left">次期ECプラットフォーム開発<br><br>【プロジェクト概要】<br>次期ECプラットフォーム開発プロジェクトにおけるStorefront API開発チームにてConceptDesign Leaderとしてチーム立上げから参画。<br><br>【担当フェーズ毎の業務内容】<br>設計：WebAPI開発の為のコンセプト及びアーキテクチャ設計。 <br>管理：多国籍な新人社員(4人)のマネジメント及びコーチングを行いつつ、チームが安定的にアジャイル開発に取り組 める様にする為のサポートをスクラムマスターとして遂行。</td>
+<td style="text-align:left">プロジェクトマネージャ<br>クラウドアーキテクト</td>
+<td style="text-align:left">Java, Javascript, Spring framework, Git, Jenkins, Linux, AWS Lamdba/S3/EC2/ Cloud Front/API Gaateway</td>
+</tr>
+<tr>
+<td style="text-align:left">2016年07月 〜2017年01月</td>
+<td style="text-align:left">ECマーケティングプロダクトのシステム開発保守運用<br><br>【プロジェクト概要】<br>ECサイトにおけるマーケティング分析プロダクトの開発保守要因して参画 <br><br>【担当フェーズ毎の業務内容】<br>要件定義：新規機能開発時のユーザ業務分析及び要件策定<br>設計/製造/検証：要件に基づいた設計から製造、検証<br>運用保守：ユーザ問合せ対応、不具合調査、修正</td>
+<td style="text-align:left">ソフトウェアエンジニア</td>
+<td style="text-align:left">Java, Javascript, IBM WAS/DB2, Git, Jenkins, Linux</td>
+</tr>
+<tr>
+<td style="text-align:left">2016年03月 – 2016年06月</td>
+<td style="text-align:left">EC製品導入後の保守コンサルタント<br><br>【プロジェクト概要】<br>当社製品導入後のECサイト運営に関する保守コンサルタントとして参画<br><br>【担当フェーズ毎の業務内容】<br>運用保守：お客様先常駐、問合せ対応、開発者向けの要件策定、お客様業務プロセス改善の為のVBスクリプト開発</td>
+<td style="text-align:left">パッケージコンサルタント</td>
+<td style="text-align:left">IBM WAS/DB2, VB Script</td>
+</tr>
+<tr>
+<td style="text-align:left">2015年04月 – 2016年02月</td>
+<td style="text-align:left">トレーニーとしての社内研修  <br><br>【概要】<br>入社後の配属前及び配属後の社内研修に参加<br><br>【研修内容毎の期間】<br>- Javaを用いた製品開発及び営業研修(7ヶ月)<br>- シンガポールでの海外協業及び語学研修(3ヶ月)<br>- ECサイト売上向上に向けたサイト分析研修(1ヶ月)</td>
+<td style="text-align:left">トレーニー</td>
+<td style="text-align:left">Java, SQL, Glassfish, Oracle DB, IBM WAS/DB2, Google Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2006%E5%B9%B44%E6%9C%88%E3%80%9C2015%E5%B9%B43%E6%9C%88-ana%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE">2006年4月〜2015年3月	ANAシステムズ株式会社</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">期間</th>
+<th style="text-align:left">プロジェクト</th>
+<th style="text-align:left">役割</th>
+<th style="text-align:left">利用技術</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2014年04月 – 2015年03月</td>
+<td style="text-align:left">次世代マーケティング分析基盤構築プロジェクト<br><br>【プロジェクト概要】<br>マーケティング分野におけるビッグデータ分析を行う為のクラウド基盤を構築するプロジェクトであり、社内初の大規模システム(データウェアハウス)クラウド移行でした。 参画当初は開発エンジニアとして参画。プロジェクト途中からチーム内クラウドアーキテクトとしてAWSに関するアーキテクチャ設計を担当。データウェアハウスで利用するBIツール導入が含まれていた為、導入製品(Tableau)にも精通。<br><br>【担当フェーズ毎の業務内容】<br>要件定義：ユーザとの要件定義、見積 設計：要件定義を元にした帳票設計、運用設計 製造：BI向けのSQLをベースとした製造 検証：システムテスト設計、障害対応</td>
+<td style="text-align:left">クラウドアーキテクト</td>
+<td style="text-align:left">Java, Shell script, Linux, AWS S3/EC2/Redshift Tableau, DM Express</td>
+</tr>
+<tr>
+<td style="text-align:left">2013年04月 – 2014年03月</td>
+<td style="text-align:left">国内旅客システムの制度変更に伴うDWHシステム開発<br><br>【プロジェクト概要】<br>国内線旅行運賃制度改革に伴うDWH側システム開発<br><br>【担当フェーズ毎の業務内容】<br>要件定義：ユーザとの要件定義、見積<br>設計：要件定義を元にした基本設計、詳細設計及び成果物レビュー<br>検証：システムテスト設計、進捗管理、品質管理、障害対応<br>稼働：稼働計画作成、ユーザ調整、関連他社調整、社内他部門調整<br>管理：協力会社管理含むプロジェクトマネジメント</td>
+<td style="text-align:left">プロジェクトマネージャ</td>
+<td style="text-align:left">C, Oracle DB 10g/Weblogic, UNIX(HP-UX), Business Objects</td>
+</tr>
+<tr>
+<td style="text-align:left">2012年04月 – 2013年03月</td>
+<td style="text-align:left">国内旅客システムオープン化に伴うDWHシステムの移行開発<br><br>【プロジェクト概要】<br>航空会社の国内旅客システムが汎用機からオープンシステムにに移行することに伴い、データ連携しているDHWの システム開発を行うプロジェクト<br><br>【担当フェーズ毎の業務内容】<br>検証：システムテスト設計、進捗管理、品質管理、障害対応<br>稼働：稼働計画作成、ユーザ調整、関連他社調整、社内他部門調整</td>
+<td style="text-align:left">クオリティエンジニア<br>ローンチプランナー</td>
+<td style="text-align:left">C, Oracle DB 10g/Weblogic, UNIX(HP-UX), Business Objects</td>
+</tr>
+<tr>
+<td style="text-align:left">2010年04月 – 2012年03月</td>
+<td style="text-align:left">航空界社向け運航乗務員管理システム開発プロジェクト及びその運用<br><br>【プロジェクト概要】<br>航空機の運航に必要な、運航乗務員（パイロット）のスケジュール/資格/訓練/個人情報管理を行うシステムのリプ レイスプロジェクト<br><br>【担当フェーズ毎の業務内容】<br>基本設計：データベース設計レビュー担当<br>運用設計：システム監視設計、リリース設計<br>稼働計画：新システム稼働に伴うリスク管理及び関係各部署との調整及び進捗管理</td>
+<td style="text-align:left">システムエンジニア</td>
+<td style="text-align:left">C, Open VMS, Oracle DB</td>
+</tr>
+<tr>
+<td style="text-align:left">2009年09月 – 2010年03月</td>
+<td style="text-align:left">航空会社向けの機体重量計算パッケージソフトの導入プロジェクト<br><br>【プロジェクト概要】<br>航空機の離着陸時に行う機体重量計算処理を自前の計算プログラムからBoeing社パッケージソフトへ切り替える為の 導入プロジェクトの初期メンバーとして参画。<br><br>【担当フェーズ毎の業務内容】<br>要件定義：パッケージソフト導入に伴う費用対効果などの検討、費用見積もり、ユーザ業務の変更点など提案、導入に必要なシステム構成の提案</td>
+<td style="text-align:left">システムエンジニア</td>
+<td style="text-align:left">WindowsServer2003, Airplane Weight Calculation Package (developed by Boeing)</td>
+</tr>
+<tr>
+<td style="text-align:left">2008年10月 – 2009年03月</td>
+<td style="text-align:left">次期運航管理システム開発<br><br>【プロジェクト概要】<br>運航管理システムのシステム更新時に開発された次期システムの運用設計及び移行設計をプロジェクトメンバーとして担当。<br><br>【担当フェーズ毎の業務内容】<br>運用設計：次期システム構築時に運用設計として、ライブラリ管理、リリース方法を設計<br>稼働設計：次期システム稼働時の移行方法の計画とそれに伴う各部署調整を担当</td>
+<td style="text-align:left">システムエンジニア</td>
+<td style="text-align:left">Java, JSP, Shell Script, Oracle DB 10g, Weblogic, CVS, UNIX(HP-UX)</td>
+</tr>
+<tr>
+<td style="text-align:left">2006年04月 – 2010年03月</td>
+<td style="text-align:left">航空会社向け運航管理システムの開発・保守・運用<br><br>【プロジェクト概要】<br>運航における、フライトプラン作成、気象情報照会、地上行程管理、パイロットブリーフィング支援を行うサブシステムの運用・保守を行いつつ、開発を兼務。<br><br>【担当フェーズ毎の業務内容】<br>設計：パイロットブリーフィング支援システム改善におけるDB設計、Web照会機能の機能/画面設計及び他システムとのインターフェース設計を担当<br>製造：各種改修機能の製造と機能テストを担当。<br>検証：大規模なインターフェース先システムのシステム更新に伴うシステムテスト設計・実施、それに伴う各部署調整作業を担当<br>運用：システムリリース、障害対応、ユーザ問い合わせに伴うシステムオペレーション作業を担当<br>DB管理：運航系共通デ-タベースの管理者として、可用性分析、問題分析、改善検討を担当。</td>
+<td style="text-align:left">プログラマー<br>DBアドミニストレータ</td>
+<td style="text-align:left">Java, JSP, Shell Script, Oracle DB 10g, Weblogic, CVS,  UNIX(HP-UX)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E8%B3%87%E6%A0%BC">資格</h2>
+<ul>
+<li>AWS Certified Solutions Architect – Associate, 2014</li>
+<li>Oracle Database 10g Master Gold, 2011</li>
+<li>XML Master Basic, 2007</li>
+<li>情報処理技術者 (ソフトウェア開発技術者),  2007</li>
+<li>TOEIC 500点, 2013</li>
+</ul>
+<h2 id="%E5%AD%A6%E6%AD%B4">学歴</h2>
+<ul>
+<li>日本大学 理工学部航空宇宙工学科　2006年03月卒業
+<ul>
+<li>研究課題: スペースプレーンの概念設計〜遺伝的アルゴリズムを用いた飛行経路最適化〜</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
