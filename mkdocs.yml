@@ -1,0 +1,22 @@
+site_name: "Uemura's Resume"
+site_author: "Tomohiro UEMURA"
+
+pages:
+    - 'English': 'en/resume.md'
+    - 'Japanese': 'jp/resume.md'
+
+theme:
+  name: 'material'
+  language: 'en'
+
+extra:
+  search:
+    language: 'ja'
+  font:
+      text: "Noto Sans JP"
+      code: "Consolas"
+
+extra_css:
+    - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+    - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+    - "css/custom.css"
